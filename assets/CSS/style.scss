@@ -13,7 +13,11 @@ $white: #f7f7f7;
 
 html {
     scroll-behavior: smooth; //for smooth scrolling
+    scrollbar-width: thin;
+    scrollbar-color: $gold $dark-bg;
 }
+
+
 
 ul {
     text-decoration: none;

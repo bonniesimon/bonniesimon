@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #BCA876 #2B2928;
 }
 
 ul {
