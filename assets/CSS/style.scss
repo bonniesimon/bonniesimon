@@ -1,0 +1,639 @@
+$gold: #bca876;
+$dark-bg: #2b2928;
+$light-color: #fffbe6;
+$dark-color: #03031b;
+$white: #f7f7f7;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; //for smooth scrolling
+}
+
+ul {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $light-color;
+}
+
+//----------------------
+//nav bar styling
+//----------------------
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10; //since z index given for .left to see box-shadow.
+    height: 9.5vh;
+    background-color: $dark-bg;
+    color: $light-color;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 7fr 1fr;
+    h2 {
+        font-size: 1.3rem;
+        grid-column: 2/3;
+        align-self: center;
+    }
+    ul {
+        grid-column: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            a {
+                color: $light-color;
+                font-size: 0.9rem;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .burger {
+        display: none;
+        cursor: pointer;
+        div {
+            height: 5px;
+            width: 25px;
+            background-color: $light-color;
+            margin: 5px;
+        }
+    }
+}
+
+//----------------------
+//nav bar styling ENDS
+//----------------------
+
+//----------------------
+//main landing page styling
+//----------------------
+
+.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+main {
+    height: 90.5vh;
+    display: flex;
+    flex-direction: row;
+    color: $dark-color;
+    .left {
+        position: relative;
+        z-index: 1; //to see box-shadow.
+        background-color: $gold;
+        color: $dark-color;
+        box-shadow: 3px 1px 6px rgba(0, 0, 0, 0.16), 3px 1px 6px rgba(0, 0, 0, 0.23);
+        flex-basis: 40%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-around;
+        // align-items: center;
+        display: grid;
+        grid-template-rows: 3fr 2fr 2fr 2fr 4fr;
+        justify-content: center;
+
+        img {
+            height: 14em;
+            width: auto;
+            border-radius: 50%;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: center;
+            filter: drop-shadow(
+                0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+                0px 9px 46px 8px rgba(0, 0, 0, 0.12),
+                0px 11px 15px -7px rgba(0, 0, 0, 0.2)
+            );
+            z-index: 2;
+        }
+        h3 {
+            font-size: 1.5rem;
+            grid-row: 3/4;
+            align-self: center;
+            justify-self: center;
+        }
+        p {
+            font-size: 1.3rem;
+            grid-row: 4/5;
+            justify-self: center;
+        }
+        h3,
+        p {
+            text-align: center;
+        }
+    }
+
+    // #particles-js canvas{
+    //     position: relative;
+    //     top: 9.5;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: -10;
+    // }
+
+    .right {
+        background-color: $white;
+        flex-basis: 60%;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 1fr 1fr 1fr 1fr 2fr 5fr;
+        h3 {
+            grid-row: 2/3;
+            font-size: 1.2rem;
+        }
+        #p1 {
+            grid-row: 3/4;
+        }
+        #p2 {
+            grid-row: 4/5;
+        }
+        #p3 {
+            grid-row: 5/6;
+        }
+        a {
+            grid-row: 6/7;
+        }
+        h3,
+        #p1,
+        #p2,
+        #p3,
+        a {
+            justify-self: center;
+            text-align: center;
+        }
+    }
+}
+
+//----------------------
+//main landing page styling ENDS
+//----------------------
+
+//----------------------
+//Socials
+//----------------------
+
+.fab {
+    color: $gold;
+    font-size: 1.7rem;
+}
+
+.socials {
+    // margin: 3rem 0
+    position: relative;
+    padding: 2rem;
+    height: 25vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        padding: 1rem 0;
+    }
+    .socials-icons {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    ul {
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+//----------------------
+//Socials ENDS
+//----------------------
+
+//----------------------
+//Sections PORTFOLIO ABOUT BLOG
+//----------------------
+
+#portfolio {
+    .large-heading {
+        background-color: $dark-bg;
+        color: $light-color;
+    }
+    .small-heading {
+        background-color: $gold;
+        color: $dark-color;
+        a {
+            padding: 0.25rem;
+            color: $dark-color;
+            box-shadow: 3px 4px 0px 0px #2b2928;
+            transition: all 0.1s;
+            &:hover {
+                box-shadow: 3px 4px 0px 0px $gold;
+                background-color: $dark-bg;
+                color: $gold;
+            }
+        }
+    }
+}
+
+#about {
+    .large-heading {
+        background-color: $white;
+        color: $dark-color;
+    }
+    .small-heading {
+        background-color: $gold;
+        color: $dark-color;
+        a {
+            padding: 0.25rem;
+            color: $dark-color;
+            box-shadow: 3px 4px 0px 0px #2b2928;
+            transition: all 0.1s;
+            &:hover {
+                box-shadow: 3px 4px 0px 0px $gold;
+                background-color: $dark-bg;
+                color: $gold;
+            }
+        }
+    }
+}
+
+#blog {
+    .large-heading {
+        background-color: $dark-bg;
+        color: $light-color;
+    }
+    .small-heading {
+        background-color: $gold;
+        color: $dark-color;
+        a {
+            padding: 0.25rem;
+            color: $dark-color;
+            box-shadow: 3px 4px 0px 0px #2b2928;
+            transition: all 0.1s;
+            &:hover {
+                box-shadow: 3px 4px 0px 0px $gold;
+                background-color: $dark-bg;
+                color: $gold;
+            }
+        }
+    }
+}
+
+//general styles
+section {
+    height: 45.25vh;
+    display: flex;
+    flex-direction: row;
+    .large-heading {
+        flex-basis: 70%;
+        display: flex;
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3,
+        p {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+    .small-heading {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3,
+        p {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+//----------------------
+//Sections PORTFOLIO ABOUT BLOG ENDS
+//----------------------
+
+//----------------------
+//Contact Form
+//----------------------
+
+.contact-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        padding: 1rem;
+    }
+    form {
+        height: 100%;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input,
+    textarea {
+        padding: 0.3rem;
+        margin: 0.2rem 0;
+        background-color: $dark-bg;
+        color: $light-color;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid $gold;
+    }
+
+    input:hover,
+    textarea:hover {
+        padding: 0.3rem;
+        margin: 0.2rem 0;
+        background-color: $gold;
+        color: $dark-color;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid $dark-bg;
+    }
+    input:focus,
+    textarea:focus {
+        padding: 0.3rem;
+        margin: 0.2rem 0;
+        background-color: $gold;
+        color: $dark-color;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid $dark-bg;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        outline: none;
+    }
+    .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        flex-basis: 50%;
+        margin: 0 0.2rem;
+    }
+}
+
+//----------------------
+//Contact Form ENDS
+//----------------------
+
+//----------------------
+//Footer
+//----------------------
+
+footer {
+    height: 100%;
+    background-color: $dark-bg;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .footer-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        p {
+            padding: 1rem 0;
+        }
+    }
+    #tech-used {
+        padding: 1rem 0;
+        color: $gold;
+    }
+}
+
+//----------------------
+//Footer ENDS
+//----------------------
+
+@media (max-width: 768px) {
+    //----------------------
+    //nav bar styling
+    //----------------------
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        grid-template-columns: 0.5fr 5fr 2fr;
+        //    position: relative;
+        h2 {
+            grid-column: 2/3;
+            justify-self: center;
+            align-self: center;
+        }
+        ul {
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            position: absolute;
+            height: 80vh;
+            width: 60vw;
+            right: 0;
+            top: 9.5vh;
+            background-color: $dark-bg;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateX(100%); //to move it out of display. Also set overflowx hidden.
+            transition: transform 0.23s ease-in;
+        }
+        .nav-active {
+            transform: translateX(0%);
+        }
+        .burger {
+            display: block;
+            grid-column: 3/4;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    //----------------------
+    //nav bar styling ENDS
+    //----------------------
+
+    //----------------------
+    //main landing page styling
+    //----------------------
+    main {
+        flex-direction: column;
+        height: auto;
+        .left {
+            height: auto;
+            grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+        }
+        .right {
+            height: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 0.5fr;
+            #p1,
+            #p2,
+            #p3 {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+    //----------------------
+    //main landing page styling ENDS
+    //----------------------
+
+    //----------------------
+    //Socials
+    //----------------------
+
+    .socials {
+        ul {
+            width: 80%;
+        }
+    }
+    //----------------------
+    //Socials ENDS
+    //----------------------
+
+    //----------------------
+    //Sections PORTFOLIO ABOUT BLOG
+    //----------------------
+
+    #portfolio {
+        .small-heading {
+            background-color: $dark-bg;
+            color: $light-color;
+            a {
+                box-shadow: 3px 4px 0px 0px $gold;
+                color: $gold;
+                &:hover{
+                    background-color: $gold;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+    #about {
+        flex-direction: column-reverse;
+        .large-heading {
+            background-color: $gold;
+            color: $dark-color;
+            a {
+                color: $dark-color;
+               
+            }
+        }
+    }
+    #blog {
+        .small-heading {
+            background-color: $dark-bg;
+            color: $light-color;
+            a {
+                box-shadow: 3px 4px 0px 0px $gold;
+                color: $gold;
+                &:hover{
+                    background-color: $gold;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+    //general section
+    section {
+        height: 100%;
+        flex-direction: column;
+    }
+    //----------------------
+    //Sections PORTFOLIO ABOUT BLOG ENDS
+    //----------------------
+
+    //----------------------
+    //Contact form
+    //----------------------
+
+    .contact-form {
+        form {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    //----------------------
+    //Contact form ENDS
+    //----------------------
+
+    //----------------------
+    //Footer
+    //----------------------
+
+    footer {
+        .footer-top {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            padding: 1rem;
+        }
+        #tech-used {
+            padding: 1rem;
+        }
+    }
+
+    //----------------------
+    //Footer ENDS
+    //----------------------
+} //media queries END
+
+@keyframes navItemFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+//to animate burger to close style
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+//to add transistion to individual lines
+.burger div {
+    transition: all 0.1s ease;
+}

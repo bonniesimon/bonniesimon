@@ -1,0 +1,87 @@
+@import "./../utilities/variables";
+
+
+
+
+//----------------------
+//Socials
+//----------------------
+
+
+
+.fab{
+    color:$gold;
+    font-size: 1.7rem;
+}
+
+.socials{
+    // margin: 3rem 0;
+    padding: 2rem;
+    height: 25vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        padding: 1rem 0;
+    }
+    .socials-icons{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    ul{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        li{
+            display: inline-block;
+            i{
+                transition: scale 300ms ease-out;
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+//----------------------
+//Socials ENDS
+//----------------------
+
+
+
+//------------------
+//Media Queries
+//------------------
+
+@media(max-width:768px){
+
+
+
+        //----------------------
+        //Socials
+        //----------------------
+
+        .socials{
+            ul{
+                width: 80%;
+            }
+        }
+        //----------------------
+        //Socials ENDS
+        //----------------------
+}
+
+
+//------------------
+//Media Queries Ends
+//------------------

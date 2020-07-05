@@ -1,0 +1,123 @@
+
+@import "../utilities/variables";
+
+
+$gold: #BCA876;
+$dark-bg : #2B2928;
+$light-color : #FFFBE6;
+$dark-color: #03031B;
+$white : #F7F7F7;
+
+
+//navbar
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;//since z index given for .left to see box-shadow.
+    height: 9.5vh;
+    background-color: $dark-bg;
+    color: $light-color;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 7fr 1fr;
+    h2{
+        font-size: 1.3rem;
+        grid-column: 2/3;
+        align-self: center;
+    }
+    ul{
+        grid-column: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            a{
+                color: $light-color;
+                font-size: 0.9rem;;
+                &:hover{
+                    color: $white;
+                }
+            }
+            .current{
+                color: $white;
+            }
+        
+        }
+    }
+    .burger{
+        display: none;
+        cursor: pointer;
+        div{
+            height: 5px;
+            width: 25px;
+            background-color: $light-color;
+            margin: 5px;
+        }
+    } 
+        
+}
+
+
+@media (max-width:767px){
+    nav{
+        grid-template-columns: 0.5fr 5fr 2fr;
+     //    position: relative;
+        h2{
+            grid-column: 2/3;
+            justify-self: center;
+            align-self: center;
+        }
+        ul{
+             box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+             position: absolute;
+             height: 80vh;
+             width: 60vw;
+             right: 0;
+             top: 9.5vh;
+             background-color: $dark-bg;
+             display: flex;
+             flex-direction: column;            
+             justify-content: space-around;
+             align-items: center;
+             transform: translateX(100%);//to move it out of display. Also set overflowx hidden.
+             transition: transform 0.23s ease-in;
+         }
+         .nav-active{
+             transform: translateX(0%);
+         }
+        .burger{
+            display: block;
+            grid-column: 3/4;
+             justify-self: center;
+             align-self: center;
+            
+        }
+    }
+}
+
+
+@keyframes navItemFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+//to animate burger to close style
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+//to add transistion to individual lines
+.burger div{
+    transition: all 0.1s ease;
+}

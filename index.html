@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <title>Bonnie Simon</title>
+
+</head>
+
+<body>
+    <nav>
+        <h2>BONNIE SIMON</h2>
+        <ul>
+            <li class="nav-item"><a href="#">HOME</a></li>
+            <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="#about">ABOUT ME</a></li>
+            <li class="nav-item"><a href="#blog">BLOG</a></li>
+            <li class="nav-item"><a href="#contact">CONTACT ME</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="left" id="home__left">
+            <img src="./assets/img/WhatsApp Image 2019-05-20 at 40923 PM edited.jpg" alt="Profile Image">
+            <!-- <img src="./assets/img/WhatsApp_Image_2019-05-20_at_40923_PM_edited-removebg-preview.png" alt="Profile-pic"> -->
+            <h3>Hi, I'm Bonnie Simon</h3>
+            <p>WEB DEVELOPER, DESIGNER, PROGRAMMER, GAMER.</p>
+        </div>
+
+
+        <div class="right">
+            <h3>BIO:</h3>
+            <p id="p1">Not special, just normal. Always Learning.</p>
+            <p id="p2">Less energetic teen who got engulped in the world of web development.</p>
+            <p id="p3">Explore my site to know more about me!</p>
+            <a href="#socials"><img src="./assets/img/ic_expand_more.png" alt="View Below>"></a>
+        </div>
+    </main>
+    <div class="socials">
+
+        <h3>SOCIALS</h3>
+
+        <div class="socials-icons">
+            <ul>
+                <!-- rel attribute added to avoid phishing. Refer : https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml -->
+                <li><a href="https://www.linkedin.com/in/bonnie-simon-3b73b694/" rel="noopener noreferrer"
+                        target="_blank"><span><i class="fab fa-linkedin"></i></span></a></li>
+                <li><a href="https://github.com/bonniesimon" rel="noopener noreferrer" target="_blank"><span><i
+                                class="fab fa-github"></i></span></a></li>
+                <li><a href="https://www.instagram.com/bon_2_b_me/" rel="noopener noreferrer" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/bOnstine" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <div class="large-heading">
+            <h3>Check out what I can do!</h3>
+        </div>
+        <div class="small-heading">
+            <h3>PORTFOLIO</h3>
+            <p><a href="./portfolio">Check it out!</a></p>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="small-heading">
+            <h3>ABOUT ME</h3>
+            <p><a href="/about">Check it out!</a></p>
+        </div>
+        <div class="large-heading">
+            <h3>Me Myself and I</h3>
+            <p>Know more about me. My interests, hobbies, tech I use, and a lot more.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="large-heading">
+            <h3>Random things I scribble down.</h3>
+            <p>I was always fascinated about writing down experiences that I endeavour throughout my time. I used to do
+                blogs but never made 'em public, which is kinda stupid, I know xD. </p>
+        </div>
+        <div class="small-heading">
+            <h3>BLOG</h3>
+            <p><a href="/404">Check it out!</a></p>
+        </div>
+    </section>
+
+    <div class="contact-form" id="contact">
+        <h3>CONTACT ME</h3>
+        <form action="#">
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
+            <input type="email" name="email" id="email-input" placeholder="Enter Your Email">
+            <textarea name="feedback" id="textarea" cols="30" rows="10" placeholder="Feedback / Message"></textarea>
+            <div class="buttons">
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <p>&copy;Bonnie Simon 2019</p>
+            <div class="sitemap">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="tech-used">Site made using HTML CSS JS Nodejs MongoDB</p>
+    </footer>
+
+</body>
+<!-- <script src="https://kit.fontawesome.com/2bbd1f9882.js"></script> -->
+<!-- <script src="./../node_modules/particles.js/particles.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script src="./app.js"></script>
+<script>
+    particlesJS.load('home__left', './assets/particlesjs-config/particles-dark.json')
+    // particlesJS.load('home__right', './assets/particlesjs-config/particles-gold.json')
+    // particlesJS.load('socials', './assets/particlesjs-config/particles-gold.json')
+</script>
+
+</html>

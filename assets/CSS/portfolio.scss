@@ -1,0 +1,129 @@
+
+@import "../CSS/utilities/variables";
+
+
+body{
+    overflow-x: hidden;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.heading-container{
+    height: 40vh;
+    position: relative;
+    background-color: $gold;
+    color: $dark-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -5;
+}
+
+
+.projects{
+    background-color: $dark-bg;
+    padding: 3rem 0;
+    h2{
+        color:$gold;
+        
+        // text-decoration: underline;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .projects-container{
+        background-color: $gold;
+        width: 60%;
+        margin: 2rem auto 5rem auto;
+        border-radius: 0 10px 0 0;
+        padding: 2rem;
+
+        a{
+            color: $grey;
+            font-style: italic;
+        }
+        p{
+            margin: 1.5rem 0 0 0;
+            text-align: justify;
+        }
+    }
+}
+
+.skills-section{
+    background-color: $dark-bg;
+    padding:3rem 0;
+    h2{
+        color:$gold;
+        
+        // text-decoration: underline;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .skills-container{
+        background-color: $white;
+        border-radius: 0 10px 0 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        margin: 2rem auto 5rem auto;
+        padding: 3.5rem;
+        .skills-container-heading{
+            background-color: $gold;
+            color: $dark-color;
+            border-radius: 0 10px 0 0;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 40%;
+            padding: 0.4rem;
+            text-align: center;
+        }
+        .skill-icons{
+            height: 3.5rem;
+            width: auto;
+        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .projects{
+        padding:1rem 0;
+        h2{
+            width: 85%;
+        }
+        .projects-container{
+            width: 85%;
+        }
+    }
+
+    .skills-section{
+        padding: 1rem 0;
+        h2{
+            width: 85%;
+        }
+        .skills-container{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 85%;
+    
+            .skills-container-heading{
+                width: 80%;
+            }
+            .skill-icons{
+                padding: 0.5rem;
+            }
+        }
+    }
+}

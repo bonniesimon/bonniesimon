@@ -1,0 +1,173 @@
+$gold: #BCA876;
+$dark-bg : #2B2928;
+$light-color : #FFFBE6;
+$dark-color: #03031B;
+$white : #F7F7F7;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;//for smooth scrolling
+}
+
+
+ul{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $light-color
+    
+}
+
+
+//----------------------
+//nav bar styling 
+//----------------------
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;//since z index given for .left to see box-shadow.
+    height: 9.5vh;
+    background-color: $dark-bg;
+    color: $light-color;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 7fr 1fr;
+    h2{
+        font-size: 1.3rem;
+        grid-column: 2/3;
+        align-self: center;
+    }
+    ul{
+        grid-column: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            a{
+                color: $light-color;
+                font-size: 0.9rem;;
+                &:hover{
+                    color: $white;
+                }
+            }
+        
+        }
+    }
+    .burger{
+        display: none;
+        cursor: pointer;
+        div{
+            height: 5px;
+            width: 25px;
+            background-color: $light-color;
+        }
+            margin: 5px;
+    } 
+        
+}
+
+//----------------------
+//nav bar styling ENDS
+//----------------------
+
+
+//----------------------
+//main setion Hero
+//----------------------
+
+main{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+
+    .left{
+        font-size: 1.5rem;
+        flex-basis: 40%;
+        background-color: $gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right{
+        height: 100%;
+        background-color: $white;
+        display: grid;
+        grid-template-rows: 5fr 0.5fr 0.5fr 3fr 5fr;
+        justify-items: center;
+        align-items: center;
+        h3{
+            grid-row: 2/3;
+            // justify-self: center;
+        }
+        p{
+            grid-row: 3/4;
+            text-align: center;
+        }
+        a {
+            grid-row: 4/5;
+        }
+    }
+
+
+}
+
+
+//----------------------
+//main setion Hero ENDS
+//----------------------
+
+//----------------------
+//posts section
+//----------------------
+
+section{
+    width: 100%;
+    padding : 5em 0;
+    background-color: $white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: $dark-bg;
+    &>h1{
+        flex-basis: 10%;
+        text-align: center;
+        margin-bottom: 5rem;
+        color: $light-color;
+    }
+    .post-wrapper{
+        flex-basis: 90%;
+        ul{
+            width: 100%;
+            li{
+                width : 60%;
+                padding: 2em;
+                margin : 1em auto;
+                background-color: $gold;
+        
+                .explicit{
+                    color: rgb(143, 10, 10);
+                }
+            }
+        }
+
+
+    }
+}
+
+//----------------------
+//posts section ENDS
+//----------------------

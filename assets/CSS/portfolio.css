@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+.heading-container {
+  height: 40vh;
+  position: relative;
+  background-color: #BCA876;
+  color: #03031B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -5;
+}
+
+.projects {
+  background-color: #2B2928;
+  padding: 3rem 0;
+}
+
+.projects h2 {
+  color: #BCA876;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.projects .projects-container {
+  background-color: #BCA876;
+  width: 60%;
+  margin: 2rem auto 5rem auto;
+  border-radius: 0 10px 0 0;
+  padding: 2rem;
+}
+
+.projects .projects-container a {
+  color: #47494B;
+  font-style: italic;
+}
+
+.projects .projects-container p {
+  margin: 1.5rem 0 0 0;
+  text-align: justify;
+}
+
+.skills-section {
+  background-color: #2B2928;
+  padding: 3rem 0;
+}
+
+.skills-section h2 {
+  color: #BCA876;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skills-section .skills-container {
+  background-color: #F7F7F7;
+  border-radius: 0 10px 0 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin: 2rem auto 5rem auto;
+  padding: 3.5rem;
+}
+
+.skills-section .skills-container .skills-container-heading {
+  background-color: #BCA876;
+  color: #03031B;
+  border-radius: 0 10px 0 0;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 40%;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.skills-section .skills-container .skill-icons {
+  height: 3.5rem;
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .projects {
+    padding: 1rem 0;
+  }
+  .projects h2 {
+    width: 85%;
+  }
+  .projects .projects-container {
+    width: 85%;
+  }
+  .skills-section {
+    padding: 1rem 0;
+  }
+  .skills-section h2 {
+    width: 85%;
+  }
+  .skills-section .skills-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 85%;
+  }
+  .skills-section .skills-container .skills-container-heading {
+    width: 80%;
+  }
+  .skills-section .skills-container .skill-icons {
+    padding: 0.5rem;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

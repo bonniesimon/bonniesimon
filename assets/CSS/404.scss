@@ -1,0 +1,70 @@
+$gold: #BCA876;
+$dark-bg : #2B2928;
+$light-color : #FFFBE6;
+$dark-color: #03031B;
+$white : #F7F7F7;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;//for smooth scrolling
+}
+
+a{
+    text-decoration: none;
+    color: $light-color
+}
+
+
+//----------------------
+//nav bar styling 
+//----------------------
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;//since z index given for .left to see box-shadow.
+    height: 9.5vh;
+    background-color: $dark-bg;
+    color: $light-color;
+    padding: 1em;
+}
+
+//----------------------
+//nav bar styling ENDS
+//----------------------
+
+//----------------------
+//main
+//----------------------
+
+main{
+    background-color: $gold;
+    color: $dark-color;
+    height: 90.5vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h2{
+        text-align: center;
+    }
+    h2,p{
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+}
+
+//----------------------
+//main ENDS
+//----------------------
+
+
+
