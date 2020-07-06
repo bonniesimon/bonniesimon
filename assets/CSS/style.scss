@@ -379,9 +379,23 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        i{
+            color: $gold;
+        }
         p{
             margin-left: 0.5rem;
         }
+    }
+    .dm-container{
+        i{
+            color: $gold;
+            display: inline-block;
+        }
+        p{
+            display: inline-block;
+            padding: 0.7rem 0.2rem;
+        }
+        
     }
 
 

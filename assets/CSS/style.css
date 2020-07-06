@@ -488,8 +488,22 @@ section .small-heading p {
           flex-direction: row;
 }
 
+.contact-form .email-container i {
+  color: #bca876;
+}
+
 .contact-form .email-container p {
   margin-left: 0.5rem;
+}
+
+.contact-form .dm-container i {
+  color: #bca876;
+  display: inline-block;
+}
+
+.contact-form .dm-container p {
+  display: inline-block;
+  padding: 0.7rem 0.2rem;
 }
 
 footer {
