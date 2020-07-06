@@ -434,6 +434,7 @@ section .small-heading p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem 0.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -446,82 +447,49 @@ section .small-heading p {
           align-items: center;
 }
 
-.contact-form h3 {
+.contact-form .contact-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0 2rem 0;
+}
+
+.contact-form .contact-heading h3 {
   padding: 1rem;
 }
 
-.contact-form form {
-  height: 100%;
-  padding: 2rem 0;
+.contact-form .contact-heading .fa-id-card-alt {
+  color: #bca876;
+}
+
+.contact-form .email-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.3rem;
-  margin: 0.2rem 0;
-  background-color: #2b2928;
-  color: #fffbe6;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid #bca876;
-}
-
-.contact-form input:hover,
-.contact-form textarea:hover {
-  padding: 0.3rem;
-  margin: 0.2rem 0;
-  background-color: #bca876;
-  color: #03031b;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid #2b2928;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  padding: 0.3rem;
-  margin: 0.2rem 0;
-  background-color: #bca876;
-  color: #03031b;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid #2b2928;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  outline: none;
-}
-
-.contact-form .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.contact-form input[type="submit"],
-.contact-form input[type="reset"] {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin: 0 0.2rem;
+.contact-form .email-container p {
+  margin-left: 0.5rem;
 }
 
 footer {
