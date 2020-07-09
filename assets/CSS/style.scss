@@ -375,6 +375,7 @@ section {
         } 
     }
     .email-container{
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -386,13 +387,20 @@ section {
             margin-left: 0.5rem;
         }
     }
+
     .dm-container{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         i{
             color: $gold;
-            display: inline-block;
+            
+            // display: inline-block;
         }
         p{
-            display: inline-block;
+            // display: inline-block;
             padding: 0.7rem 0.2rem;
         }
         
@@ -490,6 +498,41 @@ footer {
 //----------------------
 //Footer ENDS
 //----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// MEDIA QUERY
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     //----------------------
