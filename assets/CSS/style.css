@@ -473,6 +473,7 @@ section .small-heading p {
 }
 
 .contact-form .email-container {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,14 +497,33 @@ section .small-heading p {
   margin-left: 0.5rem;
 }
 
+.contact-form .dm-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .contact-form .dm-container i {
   color: #bca876;
-  display: inline-block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .contact-form .dm-container p {
-  display: inline-block;
-  padding: 0.7rem 0.2rem;
+  margin-left: 0.5rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 footer {
@@ -677,9 +697,9 @@ footer #tech-used {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact-form form {
-    width: 80%;
-    margin: 0 auto;
+  .contact-form .dm-container p {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
   footer .footer-top {
     width: 100%;

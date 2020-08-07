@@ -396,12 +396,12 @@ section {
         flex-direction: row;
         i{
             color: $gold;
-            
-            // display: inline-block;
+            align-self: flex-start; 
         }
         p{
-            // display: inline-block;
-            padding: 0.7rem 0.2rem;
+            // padding: 0.7rem 0.2rem;
+            margin-left: 0.5rem;
+            flex-basis: 100%;
         }
         
     }
@@ -673,9 +673,14 @@ footer {
     //----------------------
 
     .contact-form {
-        form {
-            width: 80%;
-            margin: 0 auto;
+        // form {
+        //     width: 80%;
+        //     margin: 0 auto;
+        // }
+        .dm-container{
+            p{
+                flex-basis: 80%;
+            }
         }
     }
 
